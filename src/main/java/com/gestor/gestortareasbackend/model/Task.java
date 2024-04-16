@@ -27,9 +27,9 @@ public class Task {
     private Project project;
 
     //muchas etiquetas a muchas tareas
-    @OneToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "task_tags",
         joinColumns = @JoinColumn(name = "task_id"),
         inverseJoinColumns = @JoinColumn(name = "tag_id"))
-    private Set<Tag> tags =new HashSet<>();
+    private Set<Tag> tags = new HashSet<>();
 }
