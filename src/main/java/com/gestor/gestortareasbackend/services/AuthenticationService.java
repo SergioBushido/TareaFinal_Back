@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.gestor.gestortareasbackend.model.Token;
 import com.gestor.gestortareasbackend.model.TokenType;
-import com.gestor.gestortareasbackend.model.User;
+import com.gestor.gestortareasbackend.model.user.User;
 import com.gestor.gestortareasbackend.model.dto.auth.AuthenticationRequest;
 import com.gestor.gestortareasbackend.model.dto.auth.AuthenticationResponse;
 import com.gestor.gestortareasbackend.model.dto.auth.RegisterRequest;

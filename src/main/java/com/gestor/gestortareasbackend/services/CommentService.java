@@ -1,7 +1,7 @@
 package com.gestor.gestortareasbackend.services;
 
 
-import com.gestor.gestortareasbackend.model.Comment;
+import com.gestor.gestortareasbackend.model.comment.Comment;
 import com.gestor.gestortareasbackend.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

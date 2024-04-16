@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4dff4e99-8311-435d-830a-e6d66599bebe" name="Changes" comment="Correcciones">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/ResponseComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/RequestProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/RequestTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/ResponseTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/TagResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/RequestTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/ResponseUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/ProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TagController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/ProjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TagRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/ProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TagService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TagService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TaskService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="security" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SergioBushido&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SergioBushido/TareaFinal_Back.git&quot;,
+    &quot;accountId&quot;: &quot;cae8fda5-6b8f-4062-8f24-0c6c0ea81208&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2fBKeM64TjhB0zP11tndc47LaUa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.gestor-tareas-backend [clean,package].executor": "Run",
+    "Maven.gestor-tareas-backend [clean].executor": "Run",
+    "Maven.gestor-tareas-backend [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GestorDeTareasBackendApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sergi/Desktop/Proyecto final Back/TareaFinal_Back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+      <command value="mvn clean package" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="GestorDeTareasBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gestor-tareas-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gestor.gestortareasbackend.GestorDeTareasBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4dff4e99-8311-435d-830a-e6d66599bebe" name="Changes" comment="" />
+      <created>1713269125993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713269125993</updated>
+      <workItem from="1713269126457" duration="1020000" />
+      <workItem from="1713272096704" duration="95000" />
+      <workItem from="1713272538947" duration="407000" />
+      <workItem from="1713273555262" duration="11919000" />
+    </task>
+    <task id="LOCAL-00001" summary="Correcciones">
+      <option name="closed" value="true" />
+      <created>1713275161570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713275161570</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correcciones">
+      <option name="closed" value="true" />
+      <created>1713275788108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713275788108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correcciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcciones" />
+  </component>
+</project>

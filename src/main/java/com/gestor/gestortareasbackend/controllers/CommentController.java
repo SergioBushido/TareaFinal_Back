@@ -1,11 +1,9 @@
 package com.gestor.gestortareasbackend.controllers;
 
-import com.gestor.gestortareasbackend.model.Comment;
+import com.gestor.gestortareasbackend.model.comment.Comment;
 import com.gestor.gestortareasbackend.services.CommentService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

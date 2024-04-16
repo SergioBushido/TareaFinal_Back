@@ -1,7 +1,7 @@
 package com.gestor.gestortareasbackend.services;
 
 
-import com.gestor.gestortareasbackend.model.Task;
+import com.gestor.gestortareasbackend.model.task.Task;
 import com.gestor.gestortareasbackend.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

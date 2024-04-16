@@ -1,41 +1,60 @@
 package com.gestor.gestortareasbackend.services;
 
-import com.gestor.gestortareasbackend.model.Tag;
+
+import com.gestor.gestortareasbackend.model.tag.Tag;
+import com.gestor.gestortareasbackend.model.tag.dto.RequestTag;
+import com.gestor.gestortareasbackend.model.tag.dto.ResponseTag;
+import com.gestor.gestortareasbackend.model.tag.dto.TagResponseMapper;
 import com.gestor.gestortareasbackend.repository.TagRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
+@AllArgsConstructor
 public class TagService {
 
-    @Autowired
-    private TagRepository tagRepository;
+    private final TagRepository tagRepository;
+    private final TagResponseMapper tagResponseMapper;
 
-    public List<Tag> getAllTags() {
-        return tagRepository.findAll();
+    public Optional<ResponseTag> getTagById(Long id) {
+        final Optional<Tag> tagOptional = tagRepository.findById(id);
+        return tagOptional.map(tagResponseMapper::tagToResponseTag);
     }
 
-    public Tag getTagById(Long tagId) {
-        return tagRepository.findById(tagId).orElse(null);
+    @Transactional(readOnly = true)
+    public List<ResponseTag> getAllTags() {
+        return tagResponseMapper.tagsToResponseTags(tagRepository.findAll());
     }
 
-    public Tag createTag(Tag tag) {
-        return tagRepository.save(tag);
+    @Transactional
+    public ResponseTag createTag(RequestTag requestTag) {
+        final Tag tag = Tag.builder().name(requestTag.getName()).build();
+        return tagResponseMapper.tagToResponseTag(tagRepository.save(tag));
     }
 
-    public Tag updateTag(Long tagId, Tag tagDetails) {
-        Tag tag = tagRepository.findById(tagId).orElse(null);
-        if (tag != null) {
-            // Actualizar los detalles de la etiqueta
-            // tagDetails.setId(tagId); // Si se desea mantener el mismo ID
-            return tagRepository.save(tagDetails);
-        }
-        return null;
+    public Optional<ResponseTag> updateTag(Long id, RequestTag tagDetails) {
+        final Optional<Tag> existingTag = tagRepository.findById(id);
+        existingTag.ifPresent(tag -> {
+            tagResponseMapper.updateEntityFromDto(tagDetails, tag);
+            tagRepository.save(tag);
+        });
+        return existingTag.map(tagResponseMapper::tagToResponseTag);
     }
 
-    public void deleteTag(Long tagId) {
-        tagRepository.deleteById(tagId);
+    public void deleteTag(Long id) {
+        tagRepository.deleteById(id);
+    }
+
+    public boolean existsById(final Long id) {
+        return tagRepository.existsById(id);
+    }
+
+    public List<ResponseTag> findByName(final String name) {
+        final List<Tag> tags = tagRepository.findByNameContainingIgnoreCase(name);
+        return tagResponseMapper.tagsToResponseTags(tags);
     }
 }

@@ -1,6 +1,6 @@
 package com.gestor.gestortareasbackend.controllers;
 
-import com.gestor.gestortareasbackend.model.Task;
+import com.gestor.gestortareasbackend.model.task.Task;
 import com.gestor.gestortareasbackend.services.TaskService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

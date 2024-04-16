@@ -1,6 +1,6 @@
 package com.gestor.gestortareasbackend.repository;
 
-import com.gestor.gestortareasbackend.model.User;
+import com.gestor.gestortareasbackend.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,49 +1,86 @@
 package com.gestor.gestortareasbackend.controllers;
 
-import com.gestor.gestortareasbackend.model.Project;
+import com.gestor.gestortareasbackend.model.project.dto.RequestProject;
+import com.gestor.gestortareasbackend.model.project.dto.ResponseProject;
 import com.gestor.gestortareasbackend.services.ProjectService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import org.springframework.beans.factory.annotation.Autowired;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "ProjectController", description = "Controlador para operaciones relacionadas con los proyectos")
 @RestController
-@RequestMapping("/api/projects")
+@RequestMapping("api/v1/projects")
+@RequiredArgsConstructor
 public class ProjectController {
-
-    @Autowired
-    private ProjectService projectService;
+    private final ProjectService projectService;
 
     @Operation(summary = "Obtener todos los proyectos")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Proyectos obtenidos exitosamente",
+                    content = @Content(schema = @Schema(implementation = ResponseProject.class)))
+    })
     @GetMapping
-    public List<Project> getAllProjects() {
-        return projectService.getAllProjects();
+    public ResponseEntity<List<ResponseProject>> getAllProjects() {
+        return ResponseEntity.ok(projectService.getAllProjects());
     }
 
-    @Operation(summary = "Obtener un proyecto por su ID")
-    @GetMapping("/{projectId}")
-    public Project getProjectById(@Parameter(description = "ID del proyecto") @PathVariable Long projectId) {
-        return projectService.getProjectById(projectId);
+    @Operation(summary = "Obtener un proyecto por ID")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Proyecto obtenido exitosamente",
+                    content = @Content(schema = @Schema(implementation = ResponseProject.class))),
+            @ApiResponse(responseCode = "404", description = "Proyecto no encontrado")
+    })
+    @GetMapping("/{id}")
+    public ResponseEntity<ResponseProject> getProjectById(@PathVariable Long id) {
+        return projectService.getProjectById(id)
+                .map(project -> ResponseEntity.ok().body(project))
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crear un nuevo proyecto")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Proyecto creado exitosamente",
+                    content = @Content(schema = @Schema(implementation = ResponseProject.class)))
+    })
     @PostMapping
-    public Project createProject(@RequestBody Project project) {
-        return projectService.createProject(project);
+    public ResponseEntity<ResponseProject> createProject(@RequestBody RequestProject requestProject) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(projectService.createProject(requestProject));
     }
 
     @Operation(summary = "Actualizar un proyecto existente")
-    @PutMapping("/{projectId}")
-    public Project updateProject(@Parameter(description = "ID del proyecto") @PathVariable Long projectId,
-                                 @RequestBody Project projectDetails) {
-        return projectService.updateProject(projectId, projectDetails);
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Proyecto actualizado exitosamente",
+                    content = @Content(schema = @Schema(implementation = ResponseProject.class))),
+            @ApiResponse(responseCode = "404", description = "Proyecto no encontrado")
+    })
+    @PutMapping("/{id}")
+    public ResponseEntity<ResponseProject> updateProject(@PathVariable Long id, @RequestBody RequestProject projectDetails) {
+        return projectService.updateProject(id, projectDetails)
+                .map(project -> ResponseEntity.ok().body(project))
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Eliminar un proyecto")
-    @DeleteMapping("/{projectId}")
-    public void deleteProject(@Parameter(description = "ID del proyecto") @PathVariable Long projectId) {
-        projectService.deleteProject(projectId);
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Proyecto eliminado exitosamente"),
+            @ApiResponse(responseCode = "404", description = "Proyecto no encontrado")
+    })
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProject(@PathVariable Long id) {
+        if (projectService.existsById(id)) {
+            projectService.deleteProject(id);
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
