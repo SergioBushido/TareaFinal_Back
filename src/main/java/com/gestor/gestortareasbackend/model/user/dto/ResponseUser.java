@@ -14,6 +14,4 @@ public class ResponseUser {
     private Long id;
     private String username;
     private String email;
-
-
 }

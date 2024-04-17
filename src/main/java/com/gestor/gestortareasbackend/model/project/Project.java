@@ -21,7 +21,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long name;
+    private String name;
 
     //puede haber muchos proyectos para un usuario
     @ManyToOne(fetch = FetchType.LAZY)

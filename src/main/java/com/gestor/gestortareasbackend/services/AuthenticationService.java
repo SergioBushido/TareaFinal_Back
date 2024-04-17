@@ -36,7 +36,7 @@ public class AuthenticationService {
 
     // REGISTRATION
     public AuthenticationResponse register(RegisterRequest request) {
-        Role role = roleRepository.findByNameIgnoreCase(request.getRole().getName())
+        Role role = roleRepository.findById(request.getRoleId())
                 .orElse(null);
 
         var user = User.builder()

@@ -1,5 +1,7 @@
 package com.gestor.gestortareasbackend.model.project.dto;
 
+import com.gestor.gestortareasbackend.model.task.dto.ResponseTask;
+import com.gestor.gestortareasbackend.model.user.dto.ResponseUser;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
@@ -10,9 +12,9 @@ import java.util.Set;
 @Data
 @Builder
 public class RequestProject {
-    @NotBlank(message = "El nombre del proyecto no puede estar vacío")
-    private String name; // El nombre del proyecto
+    @NotBlank
+    private String name;
+    private ResponseUser member;
+    private Set<ResponseTask> tasks;
 
-    private Set<Long> taskIds; // Conjunto de IDs de tareas para asociar al proyecto
-    private Set<Long> memberIds; // Conjunto de IDs de usuarios para asociar como miembros del proyecto
 }

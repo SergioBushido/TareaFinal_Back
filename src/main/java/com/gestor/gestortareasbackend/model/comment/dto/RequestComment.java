@@ -1,6 +1,9 @@
 package com.gestor.gestortareasbackend.model.comment.dto;
 
+import com.gestor.gestortareasbackend.model.task.dto.ResponseTask;
+import com.gestor.gestortareasbackend.model.user.dto.ResponseUser;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
 @Getter
@@ -9,12 +12,13 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class RequestComment {
+
     @NotBlank(message = "El contenido del comentario no puede estar vacío")
-    private String content; // El contenido del comentario
+    private String content;
 
-    @NonNull
-    private Long userId; // ID del usuario que hace el comentario
+    @NotEmpty
+    private ResponseUser user;
 
-    @NonNull
-    private Long taskId; // ID de la tarea a la que se asocia el comentario
+    @NotEmpty
+    private ResponseTask task;
 }

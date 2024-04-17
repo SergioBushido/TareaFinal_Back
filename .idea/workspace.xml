@@ -4,200 +4,158 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dff4e99-8311-435d-830a-e6d66599bebe" name="Changes" comment="Correcciones">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/ResponseComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/RequestProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/RequestTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/ResponseTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/dto/TagResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/RequestTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/ResponseUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapper.java" afterDir="false" />
+    <list default="true" id="c621a12d-7ff7-456c-809b-5d1d373a592d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/CommentRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/TaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/task/dto/TaskMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TagController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/tag/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectRequestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/RequestProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/RequestProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/RequestTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/RequestTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/ResponseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/model/user/dto/ResponseUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/ProjectRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TagRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/TokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TagService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestor/gestortareasbackend/services/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/ProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TagController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/controllers/TaskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Project.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Token$TokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Token$TokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/RequestComment$RequestCommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/RequestComment$RequestCommentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/comment/dto/RequestComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest$RegisterRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest$RegisterRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/dto/auth/RegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/RequestProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/RequestProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/project/dto/ResponseProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/RequestTask$RequestTaskBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/RequestTask$RequestTaskBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/RequestTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/RequestTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/ResponseTask$ResponseTaskBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/ResponseTask$ResponseTaskBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/ResponseTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapperImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/CommentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/ProjectRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TagRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/ProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TagService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TagService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TokenRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/TokenRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/AuthenticationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gestor/gestortareasbackend/services/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/comment/dto/CommentResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/permission/dto/PermissionRequestMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/permission/dto/PermissionRequestMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/permission/dto/PermissionResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/permission/dto/PermissionResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/project/dto/ProjectResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/role/dto/RoleResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/role/dto/RoleResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/tag/dto/TagResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/tag/dto/TagResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/task/dto/TaskResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/gestor/gestortareasbackend/model/user/dto/UserResponseMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="security" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;SergioBushido&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SergioBushido"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SergioBushido/TareaFinal_Back.git&quot;,
-    &quot;accountId&quot;: &quot;cae8fda5-6b8f-4062-8f24-0c6c0ea81208&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SergioBushido/TareaFinal_Back.git",
+    "accountId": "db9dc011-b4e5-43a9-bbcf-1d3783f620dd"
   }
-}</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2fDXscUHruShNfJnAoC8Wq6hnVW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2fBKeM64TjhB0zP11tndc47LaUa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven.gestor-tareas-backend [clean,package].executor": "Run",
-    "Maven.gestor-tareas-backend [clean].executor": "Run",
-    "Maven.gestor-tareas-backend [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.GestorDeTareasBackendApplication.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.GestorDeTareasBackendApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sergi/Desktop/Proyecto final Back/TareaFinal_Back",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+    "last_opened_file_path": "C:/Users/sergi/Desktop/PROYECTO fINAL/TareaFinal_Back"
   }
 }]]></component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn package" />
-      <command value="mvn clean package" />
-      <command value="mvn clean" />
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="GestorDeTareasBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="GestorDeTareasBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gestor.gestortareasbackend.GestorDeTareasBackendApplication" />
       <module name="gestor-tareas-backend" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gestor.gestortareasbackend.GestorDeTareasBackendApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gestor.gestortareasbackend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GestorDeTareasBackendApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4dff4e99-8311-435d-830a-e6d66599bebe" name="Changes" comment="" />
-      <created>1713269125993</created>
+      <changelist id="c621a12d-7ff7-456c-809b-5d1d373a592d" name="Changes" comment="" />
+      <created>1713336829860</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713269125993</updated>
-      <workItem from="1713269126457" duration="1020000" />
-      <workItem from="1713272096704" duration="95000" />
-      <workItem from="1713272538947" duration="407000" />
-      <workItem from="1713273555262" duration="11919000" />
+      <updated>1713336829860</updated>
     </task>
-    <task id="LOCAL-00001" summary="Correcciones">
-      <option name="closed" value="true" />
-      <created>1713275161570</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1713275161570</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Correcciones">
-      <option name="closed" value="true" />
-      <created>1713275788108</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713275788108</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Correcciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcciones" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -23,9 +23,11 @@ import java.util.List;
 @Entity
 @Table(name = "_user")
 public class User implements UserDetails {
+
     @Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
 
     private String username;
     private String email;

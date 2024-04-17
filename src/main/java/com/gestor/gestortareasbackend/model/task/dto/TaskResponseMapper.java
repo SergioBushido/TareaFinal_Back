@@ -1,6 +1,5 @@
 package com.gestor.gestortareasbackend.model.task.dto;
 
-import com.gestor.gestortareasbackend.model.permission.dto.ResponsePermission;
 import com.gestor.gestortareasbackend.model.tag.Tag;
 import com.gestor.gestortareasbackend.model.task.Task;
 import com.gestor.gestortareasbackend.model.tag.dto.TagResponseMapper;

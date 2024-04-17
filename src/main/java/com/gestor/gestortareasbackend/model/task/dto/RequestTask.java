@@ -1,5 +1,8 @@
 package com.gestor.gestortareasbackend.model.task.dto;
 
+import com.gestor.gestortareasbackend.model.project.dto.ResponseProject;
+import com.gestor.gestortareasbackend.model.tag.dto.ResponseTag;
+import com.gestor.gestortareasbackend.model.user.dto.ResponseUser;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
@@ -10,8 +13,8 @@ import java.util.Set;
 @Data
 @Builder
 public class RequestTask {
-    @NotBlank(message = "El nombre de la tarea no puede estar vacío")
-    private String name; // El nombre de la tarea
-
-    private Set<Long> tagIds; // Conjunto de IDs de etiquetas para asociar a la tarea
+    @NotBlank()
+    private String name;
+    private Long projectId;
+    private Set<Long> tagIds;
 }

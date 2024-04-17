@@ -7,6 +7,7 @@ import com.gestor.gestortareasbackend.model.project.dto.RequestProject;
 import com.gestor.gestortareasbackend.model.project.dto.ResponseProject;
 import com.gestor.gestortareasbackend.repository.ProjectRepository;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -41,7 +42,7 @@ public class ProjectService {
 
     @Transactional
     public Optional<ResponseProject> updateProject(Long id, RequestProject projectDetails) {
-        final Optional<Project> existingProject = projectRepository.findById(id);
+        Optional<Project> existingProject = projectRepository.findById(id);
         existingProject.ifPresent(project -> {
             projectResponseMapper.updateEntityFromDto(projectDetails, project);
             projectRepository.save(project);

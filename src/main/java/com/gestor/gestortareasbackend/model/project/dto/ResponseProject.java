@@ -13,10 +13,6 @@ import java.util.Set;
 public class ResponseProject {
     private Long id;
     private String name;
-
-    // Conjunto de tareas asociadas al proyecto
+    private ResponseUser member;
     private Set<ResponseTask> tasks;
-
-    // Conjunto de miembros del proyecto
-    private Set<ResponseUser> members;
 }

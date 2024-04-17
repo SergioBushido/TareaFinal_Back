@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,8 +20,9 @@ import java.util.List;
 @Tag(name = "ProjectController", description = "Controlador para operaciones relacionadas con los proyectos")
 @RestController
 @RequestMapping("api/v1/projects")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ProjectController {
+
     private final ProjectService projectService;
 
     @Operation(summary = "Obtener todos los proyectos")

@@ -1,48 +1,32 @@
 package com.gestor.gestortareasbackend.model.project.dto;
 
 import com.gestor.gestortareasbackend.model.project.Project;
-import com.gestor.gestortareasbackend.model.task.Task;
-import com.gestor.gestortareasbackend.model.tag.Tag;
-import com.gestor.gestortareasbackend.model.tag.dto.ResponseTag;
-import com.gestor.gestortareasbackend.model.task.dto.ResponseTask;
+import com.gestor.gestortareasbackend.model.task.dto.TaskMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
 import org.mapstruct.factory.Mappers;
 
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.List;
 
-@Mapper(componentModel = "spring")
+
+@Mapper(componentModel = "spring", uses = {TaskMapper.class})
 public interface ProjectResponseMapper {
 
     ProjectResponseMapper INSTANCE = Mappers.getMapper(ProjectResponseMapper.class);
 
-   // @Mapping(source = "user", target = "members")
-   // @Mapping(source = "tasks", target = "tasks")
-    ResponseProject projectToResponseProject(Project project);
+    @Mapping(source = "id", target = "id")
+    @Mapping(source = "name", target = "name")
+    @Mapping(source = "user", target = "member")
+    @Mapping(source = "tasks", target = "tasks")
+    ResponseProject entityToResponse(Project project);
 
-    default Set<ResponseTask> mapTasksToResponseTasks(Set<Task> tasks) {
-        if (tasks == null) {
-            return null;
-        }
-        return tasks.stream()
-                .map(task -> ResponseTask.builder()
-                        .id(task.getId())
-                        .name(task.getName())
-                        .tags(mapTagsToResponseTags(task.getTags()))
-                        .build())
-                .collect(Collectors.toSet());
-    }
+    List<ResponseProject> entitiesToResponses(List<Project> projects);
 
-    default Set<ResponseTag> mapTagsToResponseTags(Set<Tag> tags) {
-        if (tags == null) {
-            return null;
-        }
-        return tags.stream()
-                .map(tag -> ResponseTag.builder()
-                        .id(tag.getId())
-                        .name(tag.getName())
-                        .build())
-                .collect(Collectors.toSet());
-    }
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "name", source = "name")
+    @Mapping(target = "user", source = "member")
+    @Mapping(target = "tasks", source = "tasks")
+    void updateEntityFromDto(RequestProject dto, @MappingTarget Project entity);
+
 }
